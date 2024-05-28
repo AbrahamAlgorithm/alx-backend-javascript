@@ -1,3 +1,1 @@
-# 0x00. ES6 Basics
-* JavaScript
-* ES6
+In this repository, i specialize in backend track
