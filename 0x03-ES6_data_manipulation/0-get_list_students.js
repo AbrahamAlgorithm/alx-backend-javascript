@@ -1,3 +1,4 @@
+/* a function that returns an array of ids from a list of object */
 export default function getListStudentIds() {
         return ([
                 { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
