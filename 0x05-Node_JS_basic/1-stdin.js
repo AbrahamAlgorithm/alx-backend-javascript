@@ -1,14 +1,18 @@
-const process = require('process');
+// 1-stdin.js
 
-console.log("Welcome to Holberton School, what is your name?Welcome to Holberton School, what is your name?");
+// Display initial message
+console.log('Welcome to Holberton School, what is your name?');
 
-process.stdin.setEncoding('utf-8');
+// Set up stdin to read input from the user
+process.stdin.setEncoding('utf8');
 
-process.stdin.on('data', (data) => {
-  console.log(`Your name is: ${data.trim()}`);
-  process.exit();
+process.stdin.on('data', (input) => {
+    const name = input.trim(); // Remove any trailing new line characters
+    console.log(`Your name is: ${name}`);
+    process.exit();
 });
 
+// Handle the exit event to display closing message
 process.on('exit', () => {
-  console.log('This important software is now closing');
+    console.log('This important software is now closing');
 });
